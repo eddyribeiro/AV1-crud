@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.amelotti.avaliacao.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/nomeTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="34dp"
+            android:text="Nome do Aluno" />
+
+        <EditText
+            android:id="@+id/editNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/nomeTXT"
+            android:layout_below="@+id/nomeTXT"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/raTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editNome"
+            android:layout_below="@+id/editNome"
+            android:layout_marginTop="23dp"
+            android:text="RA" />
+
+        <EditText
+            android:id="@+id/editRA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/raTXT"
+            android:layout_below="@+id/raTXT"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="RA do Aluno"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editAV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editRA"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Nota da AV1"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/av1TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editAV1"
+            android:layout_alignStart="@+id/editAV1"
+            android:layout_marginBottom="11dp"
+            android:text="Nota da AV1" />
+
+        <TextView
+            android:id="@+id/av2TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editAV1"
+            android:layout_below="@+id/editAV1"
+            android:layout_marginTop="19dp"
+            android:text="Nota da AV2"
+            android:layout_alignEnd="@+id/av1TXT" />
+
+        <EditText
+            android:id="@+id/editAV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/av2TXT"
+            android:layout_below="@+id/av2TXT"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:hint="Nota da AV2"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editAV2"
+            android:layout_below="@+id/editAV2"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:inputType="number" />
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

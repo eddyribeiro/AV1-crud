@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.amelotti.avaliacao.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nomeTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="17dp"
+            android:text="Nome" />
+
+        <EditText
+            android:id="@+id/editNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/nomeTXT"
+            android:layout_below="@+id/nomeTXT"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/raTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editNome"
+            android:layout_below="@+id/editNome"
+            android:layout_marginTop="14dp"
+            android:text="RA" />
+
+        <EditText
+            android:id="@+id/editRA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/raTXT"
+            android:layout_below="@+id/raTXT"
+            android:ems="10"
+            android:hint="RA"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/av1TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editRA"
+            android:layout_below="@+id/editRA"
+            android:layout_marginTop="12dp"
+            android:text="AV1" />
+
+        <EditText
+            android:id="@+id/editAV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/av1TXT"
+            android:layout_below="@+id/av1TXT"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:hint="Nota AV1"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/av2TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editAV1"
+            android:layout_below="@+id/editAV1"
+            android:layout_marginTop="10dp"
+            android:text="AV2" />
+
+        <EditText
+            android:id="@+id/editAV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editAV1"
+            android:layout_below="@+id/av2TXT"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Nota da AV2"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btAdicionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editAV2"
+            android:layout_below="@+id/editAV2"
+            android:layout_marginTop="16dp"
+            android:text="adicionar" />
+
+        <Button
+            android:id="@+id/btnPesquisar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btAdicionar"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/btAdicionar"
+            android:text="Pesquisar" />
+
+        <Button
+            android:id="@+id/btAlterar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btnPesquisar"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/btnPesquisar"
+            android:text="Alterar" />
+
+        <Button
+            android:id="@+id/btExcluir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:text="Excluir"
+            android:layout_below="@+id/btAdicionar"
+            android:layout_alignStart="@+id/btAdicionar" />
+
+        <Button
+            android:id="@+id/btListar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listar"
+            android:layout_alignBaseline="@+id/btExcluir"
+            android:layout_alignBottom="@+id/btExcluir"
+            android:layout_alignStart="@+id/btnPesquisar" />
+
+        <Button
+            android:id="@+id/btMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btAlterar"
+            android:layout_alignTop="@+id/btListar"
+            android:text="MEDIA" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
